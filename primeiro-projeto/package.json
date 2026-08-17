@@ -1,0 +1,18 @@
+{
+  "name": "primeiro-projeto",
+  "version": "1.0.0",
+  "description": "Primeiro projetinho da disciplina de Aplicação Orientada a Serviçõs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "express",
+    "UNICAP",
+    "dotenv",
+    "backend"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
