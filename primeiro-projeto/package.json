@@ -1,9 +1,10 @@
 {
   "name": "primeiro-projeto",
   "version": "1.0.0",
-  "description": "Primeiro projetinho da disciplina de Aplicação Orientada a Serviçõs",
+  "description": "Primeiro projetinho da disciplina de Aplicação Orientada a Servicos",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon src/index.js",
     "start": "node src/index.js"
   },
   "keywords": [
@@ -14,5 +15,11 @@
   ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2"
+  }
 }
