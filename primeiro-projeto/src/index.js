@@ -1,1 +1,2 @@
-console.log("Olá, Andressa!")
+import 'dotenv/config'; 
+console.log('Olá, Andressa!', process.env.MY_SECRET)
