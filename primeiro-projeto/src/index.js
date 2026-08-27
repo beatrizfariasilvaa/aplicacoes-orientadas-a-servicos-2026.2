@@ -11,8 +11,4 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.listen(3000, () => {
-    console.log('Olá, Andressa!', process.env.MY_SECRET);
-});
-
-export default app;
+export default index;
