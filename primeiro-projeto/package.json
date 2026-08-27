@@ -4,8 +4,9 @@
   "description": "Primeiro projetinho da disciplina de Aplicação Orientada a Servicos",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "nodemon --exec babel-node src/index.js",
+    "build": "npx babel src --out-dir dist",
+    "start": "node dist/index.js"
   },
   "keywords": [
     "express",
@@ -15,7 +16,7 @@
   ],
   "author": "",
   "license": "ISC",
-  "type": "module",
+  "type": "commonjs",
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@babel/node": "^7.0.0",
@@ -23,6 +24,8 @@
     "nodemon": "^3.1.14"
   },
   "dependencies": {
-    "dotenv": "^17.4.2"
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
   }
 }

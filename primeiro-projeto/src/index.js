@@ -1,2 +1,18 @@
-import 'dotenv/config'; 
-console.log('Olá, Andressa!', process.env.MY_SECRET)
+import 'dotenv/config';
+import cors from 'cors';
+import express from 'express';
+
+const app=express();
+
+
+app.use(cors());
+
+app.get('/', (req, res) => {
+    res.send('Hello World!');
+});
+
+app.listen(3000, () => {
+    console.log('Olá, Andressa!', process.env.MY_SECRET);
+});
+
+export default app;
